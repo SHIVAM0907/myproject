@@ -1,0 +1,18 @@
+node_modules
+dist
+
+# Keep real credentials out of git. .env is the live file, .env.example is the
+# committed template — same pattern as frontend/.gitignore.
+.env
+.env.*
+!.env.example
+
+*.log
+npm-debug.log*
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Locally stored upload fallback (see .env.example R2_*)
+uploads/
